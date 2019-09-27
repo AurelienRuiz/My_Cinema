@@ -1,0 +1,412 @@
+body {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://images.unsplash.com/photo-1523374228107-6e44bd2b524e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") center no-repeat;
+	background-size: cover;
+	position: relative;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.brand a {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.brand span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav a{
+	text-decoration: none;
+    color: #eee;
+    font-weight: 400;
+}
+
+header{
+	width: 60%;
+	margin: 0 auto;
+}
+
+nav{
+	padding-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.brand{
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.brand span{
+	color: crimson;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 50px;
+    width: 50%;
+}
+
+.info-sign-up {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: crimson;
+    color: #ffffff;
+    width: 50%;
+    padding: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.info-sign-up-contains {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #eee;
+	border: none;
+	border-radius: 50px;
+    padding: 12px 25px;
+    margin: 8px 0;
+}
+
+input:focus {
+	outline: none;
+	color: crimson;
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1px solid crimson;
+    background-color: crimson;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    border: 1px solid crimson;
+    background-color: #ffffff;
+    color: crimson;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+.social-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-container a {
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.info-profil {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    padding: 50px;
+    margin-top: -100px;
+}
+
+.home-page {
+    margin-top: 100px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 4rem;
+    width: 900px;
+}
+
+.home-page span {
+    color: crimson;
+}
+
+.home-page p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 50px 0;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+}
+.action a {
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid crimson;
+    background-color: crimson;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.action a:hover {
+    border: 1px solid crimson;
+    background-color: #ffffff;
+    color: crimson;
+}
+
+.search-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    background-color: #ffffff;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 50px;
+}
+
+select {
+    background-color: #eee;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    margin: 8px 50px 0 0;
+    width: 200px;
+}
+
+select:focus {
+    outline: none;
+    color: crimson;
+}
+
+#search-bar {
+    display: block;
+}
+
+#search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.search-films {
+    margin-bottom: 50px;
+}
+
+#title-film {
+    margin-right: 50px;
+}
+
+.films {
+    width: 50%;
+    text-align: center;
+}
+
+.films img {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+#view-details {
+    width: 70%;
+    color: crimson;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 10px 0 50px 0;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+#form-films {
+    display: block;
+}
+
+.details-films {
+    display: flex;
+    width: 700px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: -100px;
+}
+
+.d-films {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px 0 0 30px;
+}
+
+.d-films h2 {
+    color: crimson;
+}
+
+#marge {
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+#marge2 {
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 50%;
+}
+.image img {
+    width: 100%;
+}
+
+.film-button {
+    margin-right: 10px;
+    padding: 10px 15px;
+
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    margin: 8px 0;
+}
+
+textarea:focus {
+    outline: none;
+    color: crimson;
+}
+
+.detail_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.update_films_container {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: -100px;
+}
+
+.form_update_films {
+    width: inherit;
+}
+
+.form_update_films h2 {
+    text-align: center;
+    color: crimson;
+    font-size: 26px;
+    font-weight: 600;
+}
