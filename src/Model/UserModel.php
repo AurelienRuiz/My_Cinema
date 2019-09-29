@@ -29,13 +29,10 @@ class UserModel extends \Core\Entity
         {
             session_start();
             $_SESSION["id"] = $info_email[0]["id"];
-            $_SESSION["username"] = $info_email[0]["username"];
-            $_SESSION["email"] = $info_email[0]["email"];
-            $_SESSION["password"] = $info_email[0]["password"];
-            $_SESSION["firstname"] = $info_email[0]["firstname"];
-            $_SESSION["lastname"] = $info_email[0]["lastname"];
-            $_SESSION["birthdate"] = $info_email[0]["birthdate"];
-            $_SESSION["city"] = $info_email[0]["city"];
+            foreach($info_email[0] as $key => $value)
+            {
+                $_SESSION[$key] = $value;
+            }
             return ["error"=>false];
         }        
     }
@@ -55,13 +52,9 @@ class UserModel extends \Core\Entity
         session_start();
         $info_user = $orm->read('users', $id);
         $_SESSION["id"] = $id;
-        $_SESSION["username"] = $info_user[0]["username"];
-        $_SESSION["email"] = $info_user[0]["email"];
-        $_SESSION["password"] = $info_user[0]["password"];
-        $_SESSION["firstname"] = $info_user[0]["firstname"];
-        $_SESSION["lastname"] = $info_user[0]["lastname"];
-        $_SESSION["birthdate"] = $info_user[0]["birthdate"];
-        $_SESSION["city"] = $info_user[0]["city"];
+        foreach($info_user[0] as $key => $value) {
+            $_SESSION[$key] = $value;
+        }
     }
 
     public function delete()

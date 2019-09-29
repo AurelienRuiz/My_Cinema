@@ -11,7 +11,7 @@
 </header>
 <main>
     <form class="info-profil" method="POST">
-        <h1>Mon profil</h1>
+        <h2>Mon profil</h2>
         <input type="text" name="firstname" value="<?php echo $_SESSION["firstname"] ?>" placeholder="Prénom" />
         <input type="text" name="lastname" value="<?php echo $_SESSION["lastname"] ?>" placeholder="Nom"/>
         <input type="text" name="username" value="<?php echo $_SESSION["username"] ?>" />

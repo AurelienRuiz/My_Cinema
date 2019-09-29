@@ -2,7 +2,16 @@
     <nav>
         <h1 class="brand"><a href="./">My <span> cinema</span></a></h1>
         <ul>
-            <li><a href="show"><?php echo $_SESSION["username"] ?></a></li>
+        <li><a href="show"><?php
+            if(isset($_SESSION["username"]))
+            {
+                echo $_SESSION["username"];
+            }
+            else
+            {
+                echo "Profil";
+            }
+            ?></a></li>
             <li><a href="search">Rechercher</a></li>
             <li><a href="add">Ajouter</a></li>
             <li><a href="logout">Déconnexion</a></li>
