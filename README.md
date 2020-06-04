@@ -6,13 +6,13 @@ Création d'un site pour rechercher des films et ajouter des informations de fil
 
 Features
 
-  -Inscription / Connexion / Deconnexion
-  -Modifier les informations de son profil
-  -Rechercher un film par titre ou par année de sortie
-  -Voir le détails d'un film
-  -Modifier les informations d'un film
-  -Ajouter un film
-  -Supprimer un film
+  Inscription / Connexion / Deconnexion
+  Modifier les informations de son profil
+  Rechercher un film par titre ou par année de sortie
+  Voir le détails d'un film
+  Modifier les informations d'un film
+  Ajouter un film
+  Supprimer un film
 
 
 Installation
