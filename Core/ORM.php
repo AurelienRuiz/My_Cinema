@@ -10,7 +10,7 @@ class ORM
     {
         try
         {
-            $this->database = new \PDO('mysql:host=localhost;dbname=PiePHP', 'root', '', [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
+            $this->database = new \PDO('mysql:host=localhost;dbname=My_Cinema', 'root', 'root', [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
         }
         catch (PDOException $e)
         {
